@@ -1,0 +1,7 @@
+bin_PROGRAMS = pwexec
+
+pwexec_SOURCES = pwexec.c
+pwexec_CPPFLAGS = $(GLIB_CFLAGS) $(GNOME_KEYRING_CFLAGS)
+pwexec_LDADD = $(GLIB_LIBS) $(GNOME_KEYRING_LIBS)
+
+EXTRA_DIST = LICENSE

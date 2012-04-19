@@ -36,7 +36,7 @@ PRE_UNINSTALL = :
 POST_UNINSTALL = :
 bin_PROGRAMS = pwexec$(EXEEXT)
 subdir = .
-DIST_COMMON = README $(am__configure_deps) $(srcdir)/Makefile.am \
+DIST_COMMON = $(am__configure_deps) $(srcdir)/Makefile.am \
 	$(srcdir)/Makefile.in $(top_srcdir)/configure compile depcomp \
 	install-sh missing
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
@@ -165,7 +165,7 @@ target_alias = @target_alias@
 pwexec_SOURCES = pwexec.c
 pwexec_CPPFLAGS = $(GLIB_CFLAGS) $(GNOME_KEYRING_CFLAGS)
 pwexec_LDADD = $(GLIB_LIBS) $(GNOME_KEYRING_LIBS)
-EXTRA_DIST = LICENSE
+EXTRA_DIST = LICENSE README.md
 all: all-am
 
 .SUFFIXES:
